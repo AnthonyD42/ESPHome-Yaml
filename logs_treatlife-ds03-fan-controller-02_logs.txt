@@ -1,0 +1,125 @@
+INFO ESPHome 2025.10.3
+INFO Reading configuration /config/treatlife-ds03-fan-controller-02.yaml...
+INFO Detected timezone 'America/Chicago'
+INFO Starting log output from [redacted] using esphome API
+INFO Successfully resolved treatlife-ds03-02 @ [redacted] in 0.000s
+INFO Successfully connected to treatlife-ds03-02 @ [redacted] in 0.012s
+INFO Successful handshake with treatlife-ds03-02 @ [redacted] in 0.261s
+[12:03:36.444][I][app:185]: ESPHome version 2025.10.3 compiled on Oct 24 2025, 10:45:26
+[12:03:36.449][C][wifi:679]: WiFi:
+[12:03:36.456][C][wifi:458]:   Local MAC: [redacted]
+[12:03:36.469][C][wifi:465]:   IP Address: [redacted]
+[12:03:36.481][C][wifi:469]:   SSID: [redacted]
+[12:03:36.481][C][wifi:469]:   BSSID: [redacted]
+[12:03:36.481][C][wifi:469]:   Hostname: 'treatlife-ds03-02'
+[12:03:36.481][C][wifi:469]:   Signal strength: -62 dB ▂▄▆█
+[12:03:36.481][C][wifi:469]:   Channel: 6
+[12:03:36.481][C][wifi:469]:   Subnet: 255.255.255.0
+[12:03:36.481][C][wifi:469]:   Gateway: [redacted]
+[12:03:36.481][C][wifi:469]:   DNS1: [redacted]
+[12:03:36.481][C][wifi:469]:   DNS2: [redacted]
+[12:03:36.498][C][logger:261]: Logger:
+[12:03:36.498][C][logger:261]:   Max Level: DEBUG
+[12:03:36.498][C][logger:261]:   Initial Level: DEBUG
+[12:03:36.504][C][logger:267]:   Log Baud Rate: 115200
+[12:03:36.504][C][logger:267]:   Hardware UART: UART2
+[12:03:36.508][C][uart.lt:106]: UART Bus:
+[12:03:36.527][C][uart.lt:107]:   Type: hardware
+[12:03:36.527][C][uart.lt:109]:   Port number: 1
+[12:03:36.527][C][uart.lt:111]:   TX Pin: 11
+[12:03:36.531][C][uart.lt:112]:   RX Pin: 10
+[12:03:36.539][C][uart.lt:114]:   RX Buffer Size: 256
+[12:03:36.546][C][uart.lt:116]:   Baud Rate: 115200 baud
+[12:03:36.546][C][uart.lt:116]:   Data Bits: 8
+[12:03:36.546][C][uart.lt:116]:   Parity: NONE
+[12:03:36.546][C][uart.lt:116]:   Stop bits: 1
+[12:03:36.575][C][uptime.sensor:015]: Uptime Sensor 'Uptime'
+[12:03:36.575][C][uptime.sensor:015]:   State Class: 'total_increasing'
+[12:03:36.575][C][uptime.sensor:015]:   Unit of Measurement: 's'
+[12:03:36.575][C][uptime.sensor:015]:   Accuracy Decimals: 0
+[12:03:36.576][C][uptime.sensor:025]:   Device Class: 'duration'
+[12:03:36.585][C][uptime.sensor:029]:   Icon: 'mdi:timer-outline'
+[12:03:36.593][C][uptime.sensor:033]:   Type: Seconds
+[12:03:36.617][C][light:088]: Light 'Light'
+[12:03:36.617][C][light:091]:   Default Transition Length: 0.0s
+[12:03:36.617][C][light:091]:   Gamma Correct: 1.00
+[12:03:36.625][C][homeassistant.time:010]: Home Assistant Time:
+[12:03:36.625][C][homeassistant.time:010]:   Timezone: 'CST6CDT,M3.2.0,M11.1.0'
+[12:03:36.642][C][restart.button:015]: Restart Button 'Restart'
+[12:03:36.646][C][restart.button:018]:   Icon: 'mdi:restart'
+[12:03:36.663][C][tuya.light:101]: Tuya Dimmer:
+[12:03:36.676][C][tuya.light:103]:    Dimmer has datapoint ID 6
+[12:03:36.676][C][tuya.light:106]:    Switch has datapoint ID 101
+[12:03:36.676][C][tuya.fan:062]: Tuya Fan 'Speed'
+[12:03:36.694][C][tuya.fan:206]:   Speed: YES
+[12:03:36.694][C][tuya.fan:206]:   Speed count: 4
+[12:03:36.695][C][tuya.fan:064]:   Speed has datapoint ID 3
+[12:03:36.695][C][tuya.fan:067]:   Switch has datapoint ID 1
+[12:03:36.704][C][captive_portal:116]: Captive Portal:
+[12:03:36.714][C][web_server:317]: Web Server:
+[12:03:36.714][C][web_server:317]:   Address: [redacted]:80
+[12:03:36.732][C][esphome.ota:093]: Over-The-Air updates:
+[12:03:36.732][C][esphome.ota:093]:   Address: [redacted]:8892
+[12:03:36.732][C][esphome.ota:093]:   Version: 2
+[12:03:36.732][C][esphome.ota:100]:   Password configured
+[12:03:36.748][C][safe_mode:018]: Safe Mode:
+[12:03:36.748][C][safe_mode:018]:   Successful after: 60s
+[12:03:36.748][C][safe_mode:018]:   Invoke after: 10 attempts
+[12:03:36.748][C][safe_mode:018]:   Duration: 300s
+[12:03:36.759][C][web_server.ota:241]: Web Server OTA
+[12:03:36.772][C][api:222]: Server:
+[12:03:36.772][C][api:222]:   Address: [redacted]:6053
+[12:03:36.772][C][api:222]:   Listen backlog: 4
+[12:03:36.772][C][api:222]:   Max connections: 8
+[12:03:36.772][C][api:229]:   Noise encryption: YES
+[12:03:36.787][C][wifi_signal.sensor:015]: WiFi Signal 'Wifi Signal'
+[12:03:36.787][C][wifi_signal.sensor:015]:   State Class: 'measurement'
+[12:03:36.787][C][wifi_signal.sensor:015]:   Unit of Measurement: 'dBm'
+[12:03:36.787][C][wifi_signal.sensor:015]:   Accuracy Decimals: 0
+[12:03:36.800][C][wifi_signal.sensor:025]:   Device Class: 'signal_strength'
+[12:03:36.812][C][mdns:179]: mDNS:
+[12:03:36.812][C][mdns:179]:   Hostname: treatlife-ds03-02
+[12:03:36.827][C][lt.component:013]: LibreTiny:
+[12:03:36.827][C][lt.component:013]:   Version: v1.9.1 on generic-bk7231n-qfn32-tuya, compiled at Oct 24 2025 10:35:13, GCC 10.3.1 (-O1)
+[12:03:36.827][C][lt.component:013]:   Loglevel: 3
+[12:03:36.841][D][text_sensor:085]: 'LibreTiny Version': Sending state 'v1.9.1 on generic-bk7231n-qfn32-tuya, compiled at Oct 24 2025 10:35:13, GCC 10.3.1 (-O1)'
+[12:03:36.862][C][debug:018]: Debug component:
+[12:03:36.862][D][debug:033]: ESPHome version 2025.10.3
+[12:03:36.871][D][debug:037]: Free Heap Size: 24056 bytes
+[12:03:36.871][D][debug:016]: LibreTiny Version: 1.9.1
+[12:03:36.878][D][debug:017]: Chip: BK7231N (7b1c) @ 120 MHz
+[12:03:36.885][D][debug:018]: Chip ID: 0xC20703
+[12:03:36.885][D][debug:019]: Board: generic-bk7231n-qfn32-tuya
+[12:03:36.886][D][debug:020]: Flash: 2048 KiB / RAM: 256 KiB
+[12:03:36.893][D][debug:021]: Reset Reason: SW Reboot
+[12:03:36.900][D][text_sensor:085]: 'Reset Reason': Sending state 'SW Reboot'
+[12:03:36.915][C][tuya:041]: Tuya:
+[12:03:36.915][C][tuya:044]:   Initialization failed. Current init_state: 0
+[12:03:36.915][C][tuya:049]:   If no further output is received, confirm that this is a supported Tuya device.
+[12:03:37.724][E][tuya:489]: Initialization failed at init_state 0
+[12:03:45.987][D][light:089]: 'Light' Setting:
+[12:03:45.996][D][light:102]:   State: ON
+[12:03:46.010][D][tuya:648]: Setting datapoint 6 to 1000
+[12:03:46.016][W][tuya:651]: Setting unknown datapoint 6
+[12:03:46.025][D][tuya:648]: Setting datapoint 101 to 1
+[12:03:46.032][W][tuya:651]: Setting unknown datapoint 101
+[12:03:47.556][E][tuya:489]: Initialization failed at init_state 0
+[12:03:49.094][E][tuya:489]: Initialization failed at init_state 0
+[12:03:49.539][D][light:089]: 'Light' Setting:
+[12:03:49.544][D][light:102]:   State: OFF
+[12:03:49.559][D][tuya:648]: Setting datapoint 101 to 0
+[12:03:49.565][W][tuya:651]: Setting unknown datapoint 101
+[12:03:50.700][D][fan:021]: 'Speed' - Setting:
+[12:03:50.707][D][fan:024]:   State: ON
+[12:03:50.714][D][fan:030]:   Speed: 4
+[12:03:50.721][D][tuya:648]: Setting datapoint 1 to 1
+[12:03:50.728][W][tuya:651]: Setting unknown datapoint 1
+[12:03:51.100][E][tuya:489]: Initialization failed at init_state 0
+[12:03:52.265][D][fan:021]: 'Speed' - Setting:
+[12:03:52.265][D][fan:024]:   State: ON
+[12:03:52.276][D][fan:030]:   Speed: 4
+[12:03:52.277][D][tuya:648]: Setting datapoint 1 to 1
+[12:03:52.286][W][tuya:651]: Setting unknown datapoint 1
+[12:03:52.632][E][tuya:489]: Initialization failed at init_state 0
+[12:03:54.173][E][tuya:489]: Initialization failed at init_state 0
+[12:03:55.710][E][tuya:489]: Initialization failed at init_state 0
