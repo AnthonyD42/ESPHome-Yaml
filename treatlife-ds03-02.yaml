@@ -40,7 +40,7 @@ wifi:
 
 time:
   - platform: homeassistant
-    id: my_time
+    id: homeassistant_time
 
 button:
   - platform: restart
@@ -71,11 +71,11 @@ uart:
 
 # DPIDs processed from schema model: 000003ibqy
 tuya:
-  time_id: my_time # This links the Tuya component to the time component
+  time_id: homeassistant_time # This links the Tuya component to the time component
     
 light:
   - platform: "tuya"
-    name: "Light"
+    name: Light
     dimmer_datapoint: 6
     switch_datapoint: 101
     min_value: 100
@@ -83,7 +83,69 @@ light:
 
 fan:
   - platform: "tuya"
-    name: "Speed"
+    name: Speed
     switch_datapoint: 1
     speed_datapoint: 3
     speed_count: 4
+
+# # The below items are settings imported from LibreTiny
+# select:
+#   - platform: tuya
+#     switch_datapoint: 1
+#     name: Switch Fan
+#   - platform: tuya
+#     switch_datapoint: 101
+#     name: Light
+
+# select:
+#   - platform: tuya
+#     enum_datapoint: 3
+#     name: Fan Speed Enum
+#     optimistic: true
+#     options:
+#       0: "1"
+#       1: "2"
+#       2: "3"
+#       3: "4"
+#   - platform: tuya
+#     enum_datapoint: 106
+#     name: Light Mode1
+#     optimistic: true
+#     options:
+#       0: Mode1
+#       1: Mode2
+#       2: Mode3
+
+# number:
+#   - platform: tuya
+#     number_datapoint: 6
+#     name: Bright Value
+#     min_value: 10
+#     max_value: 1000
+#     step: 1
+#   - platform: tuya
+#     number_datapoint: 102
+#     name: Fan Countdown
+#     unit_of_measurement: ""
+#     min_value: 0
+#     max_value: 1440
+#     step: 1
+#   - platform: tuya
+#     number_datapoint: 103
+#     name: Light Count Down
+#     unit_of_measurement: ""
+#     min_value: 0
+#     max_value: 1440
+#     step: 1
+#   - platform: tuya
+#     number_datapoint: 105
+#     name: Lowest Brightness
+#     min_value: 10
+#     max_value: 1000
+#     step: 1
+#   - platform: tuya
+#     number_datapoint: 108
+#     name: Indicator
+#     min_value: 0
+#     max_value: 2
+#     step: 1
