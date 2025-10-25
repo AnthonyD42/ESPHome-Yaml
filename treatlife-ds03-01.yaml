@@ -53,6 +53,17 @@ tuya:
 debug:
   update_interval: 30s
 
+on_boot:
+  priority: 0
+  then:
+    - delay: 3s
+    - lambda: |-
+        if (id(speed_fan).state) {
+          ESP_LOGI("boot", "Fan restored ON, speed=%d", id(speed_fan).speed);
+        } else {
+          ESP_LOGI("boot", "Fan restored OFF");
+        }
+
 text_sensor:
   - platform: debug
     reset_reason:
@@ -78,6 +89,8 @@ light:
 fan:
   - platform: "tuya"
     name: "Speed"
+    id: speed_fan
+    restore_mode: RESTORE_DEFAULT_ON
     switch_datapoint: 1
     speed_datapoint: 3
     speed_count: 4
