@@ -6,6 +6,16 @@ esphome:
   name: ${name}
   name_add_mac_suffix: false
   friendly_name: ${friendly_name}
+  on_boot:
+    priority: 0
+    then:
+      - delay: 3s
+      - lambda: |-
+          if (id(speed_fan).state) {
+            ESP_LOGI("boot", "Fan restored ON, speed=%d", id(speed_fan).speed);
+          } else {
+            ESP_LOGI("boot", "Fan restored OFF");
+          }
 
 esp8266:
   board: esp01_1m
@@ -52,17 +62,6 @@ tuya:
 
 debug:
   update_interval: 30s
-
-on_boot:
-  priority: 0
-  then:
-    - delay: 3s
-    - lambda: |-
-        if (id(speed_fan).state) {
-          ESP_LOGI("boot", "Fan restored ON, speed=%d", id(speed_fan).speed);
-        } else {
-          ESP_LOGI("boot", "Fan restored OFF");
-        }
 
 text_sensor:
   - platform: debug
